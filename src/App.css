@@ -1,0 +1,115 @@
+/* App.css */
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #e0f7fa 0%, #b2ebf2 100%);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden; /* Keep this hidden to prevent body scrolling */
+}
+
+.App {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    padding: 100px;
+    width: 100%;
+    max-width: 400px; /* Adjusted max-width for better centering */
+    height: 80vh; /* Set a height to allow for scrolling */
+    overflow-y: auto; /* Enable vertical scrolling */
+}
+
+h1 {
+    color: #00796b;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #388e3c;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.contactForm {
+    display: flex;
+    flex-direction: column;
+}
+
+input, textarea {
+    border: 1px solid #81c784;
+    border-radius: 5px;
+    padding: 12px;
+    margin-bottom: 15px;
+    font-size: 16px;
+    line-height: 1.5;
+    width: 100%;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+input:focus, textarea:focus {
+    border-color: #00796b;
+    outline: none;
+}
+
+button {
+    background: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    margin-bottom: 20px;
+}
+
+button:hover {
+    background-color: #388e3c;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+li {
+    background: #e0f2f1;
+    border-radius: 5px;
+    padding: 12px;
+    margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+li strong {
+    color: #00796b;
+}
+
+li em {
+    color: #757575;
+    font-size: 0.9em;
+}
+
+li img {
+    max-width: 100%;
+    max-height: 150px;
+    width: auto;
+    height: auto;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+@media (max-width: 600px) {
+    .App {
+        width: 95%;
+    }
+}
+
+
